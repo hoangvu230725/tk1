@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.nav {
+    padding: 10px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.register-container {
+    background: #fff;
+    width: 350px;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.have-account {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.btn-register {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+}
+
+</style>
+<body>
+    <div class="nav">
+        <a href="#">Home</a> | <a href="login.html">Đăng nhập</a> | <a href="#">Đăng ký</a>
+    </div>
+
+    <div class="register-container">
+        <h2>Màn hình đăng ký</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Mật khẩu</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Nhập lại mật khẩu</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <a href="login.html" class="have-account">Đã có tài khoản</a>
+
+            <button type="submit" class="btn-register">Đăng ký</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        Lập trình web @01/2024
+    </div>
+</body>
+</html>
