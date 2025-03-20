@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách người dùng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    margin: 20px auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+.url-bar {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+nav {
+    margin: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 5px;
+}
+
+.pagination {
+    margin: 20px 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    color: black;
+    background: #f9f9f9;
+}
+
+.pagination a:hover {
+    background: #ddd;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f4f4f4;
+    font-size: 14px;
+}
+
+</style>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Lập trình web</h1>
+            <input type="text" class="url-bar" value="http://php.local" readonly>
+        </header>
+
+        <nav>
+            <a href="#">Home</a> | 
+            <a href="#">Đăng xuất</a>
+        </nav>
+
+        <main>
+            <h2>Danh sách user</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>UPVH</td>
+                        <td>ATW@gmail.com</td>
+                        <td><a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>IFUK</td>
+                        <td>KULB@gmail.com</td>
+                        <td><a href="#">Edit</a> | <a href="#">View</a> | <a href="#">Delete</a></td>
+                    </tr>
+                    <!-- Thêm các dòng dữ liệu khác tương tự -->
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <a href="#">Previous</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Lập trình web @01/2024</p>
+        </footer>
+    </div>
+
+</body>
+</html>
